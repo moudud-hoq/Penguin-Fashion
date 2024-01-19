@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,500;1,700&display=swap"
+        rel="stylesheet">
     <title>Penguin Fashion With Tailwind</title>
+    <style>
+        body {
+            border: 1px solid red;
+        }
+    </style>
 </head>
-<body>
 
-    <header class="text-teal-800 text-6xl text-center m-3	">
-Hi There
+<body>
+    <header class="bg-orange-50 px-28 py-9 ">
+        <div class="w-full flex justify-between items-center ">
+            <div class="w-1/2">
+                <img src="icons/logo.png" width="250px" height="auto">
+            </div>
+
+            <div class="w-1/2">
+                <ul class="flex justify-end gap-x-14">
+                    <a href="#home">Home</a>
+                    <a href="#product">Products</a>
+                    <a href="#about-us">About Us</a>
+                    <a href="#contacr-us">Contact Us</a>
+                </ul>
+            </div>
+        </div>
+<!-- banner-section  -->
+        <div class="w-full banner my-10 flex items-center">
+            <!-- banner-text -->
+            <div class="w-1/2">
+                <h1 class="text-7xl font-bebas-neue"><span class="text-[#FABE4C]">Be the Penguins</span> <br>
+                    of Winter</h1>
+                <p class="">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry.</p>
+                <div class="btn flex gap-4 items-center ">
+                    <img class="bg-green-500"src="icons/shopping-cart 1.png">
+                    <p class="uppercase bg-green-500">Buy Now</p>
+                </div>
+            </div>
+
+            <div class="w-1/2 flex items-center justify-center">
+                <img src="images/model.png" class="max-w-full" width="430px" height="auto">
+            </div>
+
+        </div>
     </header>
-    
 </body>
+
 </html>
