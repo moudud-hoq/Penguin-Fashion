@@ -13,16 +13,23 @@
     <title>Penguin Fashion With Tailwind</title>
     <style>
         body {
+            border: 1px solid rgb(102, 0, 0);
+        }
+
+        header {
             border: 1px solid red;
         }
+
+        main {border: 1px solid rgb(102, 0, 0);}
     </style>
 </head>
 
 <body>
+    <!-- Header Section -->
     <header class="bg-orange-50 px-28 py-9 ">
-        <div class="w-full flex justify-between items-center ">
-            <div class="w-1/2">
-                <img src="icons/logo.png" width="250px" height="auto">
+        <div class="bg-orange-50 w-full flex justify-between items-center ">
+            <div class="bg-orange-50  w-1/2">
+                <img class="" src="icons/logo.png" width="250px" height="auto">
             </div>
 
             <div class="w-1/2">
@@ -34,26 +41,39 @@
                 </ul>
             </div>
         </div>
-<!-- banner-section  -->
-        <div class="w-full banner my-10 flex items-center">
+
+        <!-- banner-section  -->
+        <div id="home" class="w-full banner my-10 flex items-center">
+
             <!-- banner-text -->
-            <div class="w-1/2">
+            <div class="w-1/2 flex flex-col gap-8">
                 <h1 class="text-7xl font-bebas-neue"><span class="text-[#FABE4C]">Be the Penguins</span> <br>
                     of Winter</h1>
-                <p class="">Lorem Ipsum is simply dummy text of the printing
+                <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the printing
                     and typesetting industry.</p>
-                <div class="btn flex gap-4 items-center ">
-                    <img class="bg-green-500"src="icons/shopping-cart 1.png">
-                    <p class="uppercase bg-green-500">Buy Now</p>
+
+                <!-- button -->
+                <div class="btn rounded-lg flex items-center justify-center gap-4 bg-green-500 w-44 h-12 px-8">
+                    <img src="icons/shopping-cart 1.png" width="20px" height="auto">
+                    <p class="uppercase text-rose-50">Buy Now</p>
                 </div>
             </div>
 
+            <!-- Banner Image  -->
             <div class="w-1/2 flex items-center justify-center">
                 <img src="images/model.png" class="max-w-full" width="430px" height="auto">
             </div>
 
         </div>
     </header>
+
+    <!-- Start Main Section -->
+    <main class="px-28 py-9">
+        <h1 class="uppercase">W0Man Jacket</h1>
+        
+
+    </main>
+
 </body>
 
 </html>
